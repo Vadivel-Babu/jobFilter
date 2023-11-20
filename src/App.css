@@ -1,0 +1,16 @@
+.header{
+  background:url('../public/images/bg-header-desktop.svg');
+  background-color:#5CA5A5;
+  height: 150px;
+  overflow: hidden;
+}
+
+.container{
+  padding: 0 20px;
+}
+@media (min-width:"400px") {
+  .header{
+     background:url('../public/images/bg-header-mobile.svg');
+     background-color: beige;
+  }  
+}
