@@ -7,8 +7,8 @@ const List = ({data,add}) => {
         <div className="job__description">
           <div className="wrapper">
             <span className="company">{data.company}</span>
-            <span className="new flex">NEW!</span>
-            <span className="feature flex">FEATURED</span>
+            {data.new && <span className="new flex">NEW!</span>}
+            {data.featured && <span className="feature flex">FEATURED</span>}
           </div>
           <div className="details">
           <h3 className="position">{data.position}</h3>
